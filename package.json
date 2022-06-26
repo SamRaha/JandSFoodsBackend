@@ -1,0 +1,20 @@
+{
+  "name": "insertservicenamehere",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git-codecommit.eu-west-1.amazonaws.com/v1/repos/TemplateServerlessNodeApp"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.805.0",
+    "dotenv": "^8.2.0",
+    "nunjucks": "^3.2.2"
+  }
+}

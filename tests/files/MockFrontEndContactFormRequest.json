@@ -1,0 +1,13 @@
+{
+    "resource": "/",
+    "path": "/",
+    "httpMethod": "POST",
+    "pathParameters": { "id": "123" },
+    "runPhase": "TEST",
+    "body": {
+        "name": "sam raha",
+        "email": "sam.raha@hotmail.co.uk",
+        "mobile": "078426027777",
+        "message": "testing contact form"
+    }
+}

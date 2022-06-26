@@ -1,0 +1,21 @@
+service: HermesLocal-NotificationService
+provider:
+    name: aws
+    runtime: nodejs12.x
+    region: eu-west-1
+    stage: ${opt:stage, 'dev'}
+    timeout: 30
+    memorySize: 256
+
+functions:
+    sendContactFormEmail:
+        handler: handler.sendContactFormEmailHandler
+        events:
+            - http:
+                  path: /
+                  method: post
+                  cors:
+                      origin: "*"
+        environment:
+            NODE_ENV: ${self:provider.stage}
+            SES_REGION: ${file(config.${self:provider.stage}.json):SES_REGION}

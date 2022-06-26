@@ -1,0 +1,4 @@
+{
+    "NODE_ENV": "dev",
+    "SES_REGION": "eu-west-1"
+}
